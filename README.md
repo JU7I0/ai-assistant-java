@@ -6,6 +6,13 @@
 
 This project is an API built using **Java, Java Spring, Langchain4j and LM Studio.**
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+
 ## Installation
 
 1. Clone the repository:
@@ -24,6 +31,7 @@ git clone https://github.com/Fernanda-Kipper/ai-assistant-java
 4. Download model Meta-Llama-3-8B-Instruct-Q5_K_M.gguf
 5. Start LM Server
 
+<img src=".github/llmStudio.png"/>
 
 ## API Endpoints
 The API provides the following endpoints:
@@ -34,11 +42,17 @@ POST /api/chat - Retrieve a list of all users.
 ```
 ```json
 {
-  "message": "do you speak portuguese? "
+    "message": "Oi, tudo bem?"
 }
 ```
 ```json
 {
-  "response": "The movies that have Category Romance are: - La La Land - Titanic"
+  "response": "Tudo bem! Como posso ajudar você hoje?"
 }
 ```
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
+
+When contributing to this project, please follow the existing code style, [commit conventions](https://www.conventionalcommits.org/en/v1.0.0/), and submit your changes in a separate branch.
