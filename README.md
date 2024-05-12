@@ -38,7 +38,7 @@ A API fornece os seguintes endpoints:
 
 **METODO POST**
 ```markdown
-POST /api/chat - Recupere uma lista de todos os usuários.
+POST /api/chat - Faça perguntas ao chat.
 ```
 ```json
 {
