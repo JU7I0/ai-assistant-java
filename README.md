@@ -18,7 +18,7 @@ This project is an API built using **Java, Java Spring, Langchain4j and LM Studi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Fernanda-Kipper/ai-assistant-java
+git clone https://github.com/JU7I0/ai-assistant-java.git
 ```
 
 2. Install dependencies with Maven
