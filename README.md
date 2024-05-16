@@ -55,11 +55,15 @@ POST /api/chat - Faça perguntas ao chat.
 
 1. Certifique-se de ter o Docker instalado em sua máquina. Se não tiver, você pode baixá-lo e instalá-lo a partir do [site oficial do Docker](https://www.docker.com/get-started).
 
-2. Abra um terminal e navegue até o diretório raiz do seu projeto onde está localizado o arquivo Dockerfile.
+2. Abra um terminal e navegue até o diretório raiz do projeto onde está localizado o arquivo Dockerfile.
 
-3. Execute o seguinte comando para construir a imagem Docker. Substitua "nome-da-imagem" pelo nome desejado para a sua imagem:
+3. Execute o seguinte comando para construir a imagem Docker:
 
-```docker build -t nome-da-imagem . ```
+```docker build -t ai-assistant-java  . ```
+
+4. Execute o seguinte comando para rodar a imagem no container:
+
+```docker run -p 8080:8080 ai-assistant-java```
 
 ## Contribuições
 
