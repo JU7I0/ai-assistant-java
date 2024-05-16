@@ -11,9 +11,10 @@ Este projeto é uma API construída utilizando **Java, Java Spring, Langchain4j 
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Endpoints da API](#endpoints-da-api)
+- [DockerFile](#para-executar-com-Docker)
 - [Contribuições](#contribuições)
 
-## Instalação
+## Instalação para rodar local
 
 1. Clone o repositório:
 
@@ -50,6 +51,15 @@ POST /api/chat - Faça perguntas ao chat.
   "response": "Tudo bem! Como posso ajudar você hoje?"
 }
 ```
+## Para executar com Docker:
+
+1. Certifique-se de ter o Docker instalado em sua máquina. Se não tiver, você pode baixá-lo e instalá-lo a partir do [site oficial do Docker](https://www.docker.com/get-started).
+
+2. Abra um terminal e navegue até o diretório raiz do seu projeto onde está localizado o arquivo Dockerfile.
+
+3. Execute o seguinte comando para construir a imagem Docker. Substitua "nome-da-imagem" pelo nome desejado para a sua imagem:
+
+```docker build -t nome-da-imagem . ```
 
 ## Contribuições
 
