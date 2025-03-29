@@ -1,21 +1,22 @@
 package com.juliobarros.aiassistantjava.factory;
 
 import dev.langchain4j.model.chat.ChatLanguageModel;
-import dev.langchain4j.model.openai.OpenAiChatModel;
-
-import java.time.Duration;
+import dev.langchain4j.model.chat.request.ResponseFormat;
+import dev.langchain4j.model.googleai.GoogleAiGeminiChatModel;
 
 public class AiAssistantFactory {
+
+    static String apiKey = System.getenv("GOOGLE_GEMINI_API_KEY");
 
     private AiAssistantFactory() {
     }
 
     public static ChatLanguageModel createLocalChatModel() {
-        return OpenAiChatModel.builder()
-                .baseUrl("http://localhost:1234/v1")
-                .apiKey("ignore")
-                .logRequests(true)
-                .timeout(Duration.ofSeconds(30000))
-                .build();
+        return GoogleAiGeminiChatModel.builder()
+            .apiKey(apiKey)
+            .modelName("gemini-2.0-flash")
+            .responseFormat(ResponseFormat.TEXT)
+            .build();
     }
+
 }
